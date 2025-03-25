@@ -16,7 +16,7 @@
 畫面展示：<br>
 ![圖片描述](photo/result2.png)
 傳輸資料：<br>
-![圖片描述](photo/result3.png)
+![圖片描述](photo/result3.PNG)
 
 ## 額外檔案
 報告用ppt： 小乖.pdf
