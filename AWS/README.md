@@ -2,6 +2,9 @@
 
 運用AWS的S3服務，進行心理測驗網站託管，後端連接API和Lambda，將用戶測驗結果打入MongoDB雲端資料庫，進行儲存。
 
+架構圖：<br>
+![圖片描述](../photo/structuration.png)
+
 ## 程式碼
 
 分為兩個檔案夾：**Website**、**Lamdba**。
