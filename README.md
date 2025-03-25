@@ -8,3 +8,12 @@
 
 2. Linux：
 在**Linux Ubuntu**伺服器上架設心理測驗網站，以**php**進行後端串接，傳輸資料到資料庫進行儲存。
+
+## 成果展示：
+
+初始畫面：<br>
+![圖片描述](photo/result1.png)
+畫面展示：<br>
+![圖片描述](photo/result2.png)
+傳輸資料：<br>
+![圖片描述](photo/result3.png)
