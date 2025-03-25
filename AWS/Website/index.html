@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>心理測驗</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class="container">
+       <div class="card">
+           <!-- 暱稱輸入頁面 -->
+           <div id="nicknamePage">
+               <h1 class="title">森林深處的心理測驗</h1>
+               <div class="nickname-container">
+                   <label for="nickname" class="nickname-label">在開始之前，請告訴我該如何稱呼你？</label>
+                   <input type="text" 
+                          id="nickname" 
+                          class="nickname-input" 
+                          placeholder="請輸入你的暱稱"
+                          maxlength="20">
+                   <p id="nicknameError" class="error-message">請輸入暱稱才能開始測驗</p>
+                   <button class="btn" onclick="window.psychTest.startWithNickname()">進入森林</button>
+               </div>
+           </div>
+
+           <!-- 開始頁面 -->
+           <div id="startPage" style="display: none;">
+               <h1 class="title">歡迎來到神秘的森林</h1>
+               <p class="text-center">讓我們一起踏上這趟奇幻的旅程，探索內心深處的秘密。在這片神秘的森林中，每一個選擇都將揭示你內心真實的一面。</p>
+               <div class="text-center">
+                   <button class="btn" onclick="window.psychTest.startTest()">開始探索</button>
+               </div>
+           </div>
+
+           <!-- 問題頁面 -->
+           <div id="questionPage" style="display: none;">
+               <h2 id="questionTitle"></h2>
+               <p id="questionStory" class="story"></p>
+               <p id="questionText"></p>
+               <div id="options"></div>
+           </div>
+
+           <!-- 結果頁面 -->
+           <div id="resultPage" style="display: none;">
+               <div id="resultContainer"></div>
+               <div class="restart-container">
+                   <button class="restart-btn" onclick="window.psychTest.restart()">重新測驗</button>
+               </div>
+           </div>
+       </div>
+   </div>
+
+   <script src="psychTest1.js"></script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+/* 全局樣式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('https://i.pinimg.com/736x/7a/c0/03/7ac003482e8f80a87fe0ad6ad3285449.jpg') no-repeat center center fixed;
+    background-size: cover;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* 容器樣式 */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 卡片樣式 */
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* 標題樣式 */
+.title {
+    text-align: center;
+    color: #2C5530;
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #3A6B35;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+/* 暱稱頁面樣式 */
+.nickname-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nickname-label {
+    display: block;
+    color: #445D48;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.nickname-input {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px;
+    margin: 10px auto;
+    border: 2px solid #4A7856;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #2C5530;
+}
+
+.error-message {
+    color: #ff4444;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+/* 按鈕樣式 */
+.btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(145deg, #4A7856, #3A6B35);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: linear-gradient(145deg, #3A6B35, #2C5530);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* 選項按鈕樣式 */
+#options {
+    margin-top: 20px;
+}
+
+.option-button {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    margin: 12px 0;
+    border: 2px solid #4A7856;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.3s ease;
+    color: #2C5530;
+    font-size: 16px;
+}
+
+.option-button:hover {
+    background: rgba(74, 120, 86, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 文字樣式 */
+.text-center {
+    text-align: center;
+}
+
+p {
+    color: #445D48;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.story {
+    font-style: italic;
+    color: #3A6B35;
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(74, 120, 86, 0.1);
+    border-radius: 8px;
+}
+
+/* 結果頁面樣式 */
+#resultContainer {
+    padding: 20px 0;
+}
+
+.result-item {
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(74, 120, 86, 0.1);
+}
+
+.result-item h3 {
+    color: #2C5530;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(74, 120, 86, 0.1);
+}
+
+.restart-container {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(74, 120, 86, 0.1);
+}
+
+.restart-btn {
+    background: linear-gradient(145deg, #4A7856, #3A6B35);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.restart-btn:hover {
+    background: linear-gradient(145deg, #3A6B35, #2C5530);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* 動畫效果 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 滾動條樣式 */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4A7856;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3A6B35;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .card {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    .title {
+        font-size: 24px;
+    }
+    
+    .nickname-input {
+        max-width: 100%;
+    }
+    
+    .result-item {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+}
